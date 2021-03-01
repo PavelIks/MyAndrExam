@@ -39,7 +39,11 @@ public class MainActivity extends AppCompatActivity
                 int a1 = Integer.parseInt(EditText1.getText().toString());
                 int a2 = Integer.parseInt(EditText2.getText().toString());
                 int b1 = a1 + a2;
-                TextView1.setText(String.valueOf(b1));
+                TextView1.setText("$" + String.valueOf(b1));
+            }
+            else
+            {
+                TextView1.setText("Error!");
             }
         }
         catch (Exception exception)

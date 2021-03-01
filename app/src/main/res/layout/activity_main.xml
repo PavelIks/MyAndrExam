@@ -120,14 +120,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Стоимость" />
+                android:text="Стоимость"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/Button_ID1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="cost_button"
-                android:text="Стоимость" />
+                android:text="Стоимость"
+                android:textSize="24sp" />
         </LinearLayout>
 
     </LinearLayout>
