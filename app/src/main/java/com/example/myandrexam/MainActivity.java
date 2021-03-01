@@ -8,7 +8,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity
 {
-    EditText EditText1 = (EditText) findViewById(R.id.EditTextNumber_ID1); // Стоимость автомобиля ($)
+    private EditText EditText1; // Стоимость автомобиля ($)
     //EditText EditText2 = (EditText) findViewById(R.id.EditTextNumber_ID2); // Объем двигателя (куб. дм)
     //Spinner Spinner1 = (Spinner) findViewById(R.id.Spinner_ID1); // Тип двигателя
     //EditText EditText3 = (EditText) findViewById(R.id.EditTextNumber_ID3); // Год выпуска
@@ -19,9 +19,10 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        EditText1 = (EditText) findViewById(R.id.EditTextNumber_ID1);
     }
 
-    public void Cost_Button(View view)
+    public void cost_button(View view)
     {
         int a1 = Integer.parseInt(EditText1.getText().toString());
     }
